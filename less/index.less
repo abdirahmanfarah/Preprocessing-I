@@ -49,6 +49,13 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@font: 'Red Hat Display', sans-serif;
+
+.h2element() {
+	font-size:2rem;
+padding:21px 0;
+}
+
 * {
 		box-sizing: border-box;
 	
@@ -57,30 +64,108 @@ table {
 html, body {
 		height: 100%;
 }
+p{
+	font-family:@font;
+	line-height: 1.4;
+}
 .container {
 	width:1200px;
 	margin:0 auto;
+	border:1px solid red;
 }
 
 /*my navigation 8*/
 
 .nav-container{
 	background:grey;
-	width:100%;
+	width:90%;
 	margin:50px;
-	padding:50px;
-	.img1 {
-		width:28vh;
-	} /*close of my image tag */
-	h1 {
-		font-size:4rem;
-	}/*h1 close */
-	h2{
-		font-size:2rem;
-		padding:21px;
-	}
-	p {
-		font-size:1.5rem;
-	}
-}
+	display:flex;
+	justify-content: space-between;
 
+	.img1 {
+		width: 40vh;
+	} /*close of my image tag */
+
+	header {
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		margin:20px;
+		padding:40px;
+		h1 {
+			font-size:4rem;
+		}/*h1 close */
+		h2{
+			font-size:2rem;
+			padding:21px 0;
+		}/*h2 close */
+		p {
+			font-size:1rem;
+			margin:20px 0 px;
+		}/*p close */
+		button {
+			width:116px;
+			height:50px;
+			margin:25px 0px;
+			border:1px solid black;
+			background:teal;
+		}
+	}/*close of my header tag */
+	
+}/*Close of my nav-container */
+
+/* Main content- Top half */
+
+.main {
+	width:90%;
+	margin:50px;
+	display:flex;
+	justify-content: space-around;
+	
+	.About {
+		width:40%;
+		padding:20px;
+		h2{
+			.h2element();
+		} /*close of h2 */
+	}/*close of about section */
+	
+	.Stuff {
+		width:40%;
+		padding:20px;
+		h2 {
+			.h2element();
+		} /*close of h2 */
+		p{
+			border:1px solid grey;
+			font-size:1.4rem;
+		}/*close of p */
+	}/* Close of Stuff section */
+	
+}/*close of my main section */
+
+.work {
+	width:90%;
+	margin:50px;
+	// display:flex;
+	// flex-direction:column;
+
+	h2{
+		.h2element();
+	} /* Close of h2 for work */
+	table{
+		margin:20px 0px;
+		width:100%;
+		th{
+			border:1px solid black;
+			padding:8px;
+		} /* Close of table heading */
+		
+		td{
+			border:1px solid black;
+			padding:8px;
+		} /* Close of td */
+	} /* Close of table in work history */
+
+}/* Close of work section */

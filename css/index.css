@@ -134,29 +134,112 @@ html,
 body {
   height: 100%;
 }
+p {
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.4;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 /*my navigation 8*/
 .nav-container {
   background: grey;
-  width: 100%;
+  width: 90%;
   margin: 50px;
-  padding: 50px;
+  display: flex;
+  justify-content: space-between;
   /*close of my image tag */
-  /*h1 close */
+  /*close of my header tag */
 }
 .nav-container .img1 {
-  width: 28vh;
+  width: 40vh;
 }
-.nav-container h1 {
+.nav-container header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px;
+  padding: 40px;
+  /*h1 close */
+  /*h2 close */
+  /*p close */
+}
+.nav-container header h1 {
   font-size: 4rem;
 }
-.nav-container h2 {
+.nav-container header h2 {
   font-size: 2rem;
-  padding: 21px;
+  padding: 21px 0;
 }
-.nav-container p {
-  font-size: 1.5rem;
+.nav-container header p {
+  font-size: 1rem;
+  margin: 20px 0 px;
 }
+.nav-container header button {
+  width: 116px;
+  height: 50px;
+  margin: 25px 0px;
+  border: 1px solid black;
+  background: teal;
+}
+/*Close of my nav-container */
+/* Main content- Top half */
+.main {
+  width: 90%;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  /*close of about section */
+  /* Close of Stuff section */
+}
+.main .About {
+  width: 40%;
+  padding: 20px;
+  /*close of h2 */
+}
+.main .About h2 {
+  font-size: 2rem;
+  padding: 21px 0;
+}
+.main .Stuff {
+  width: 40%;
+  padding: 20px;
+  /*close of h2 */
+  /*close of p */
+}
+.main .Stuff h2 {
+  font-size: 2rem;
+  padding: 21px 0;
+}
+.main .Stuff p {
+  border: 1px solid grey;
+  font-size: 1.4rem;
+}
+/*close of my main section */
+.work {
+  width: 90%;
+  margin: 50px;
+  /* Close of h2 for work */
+  /* Close of table in work history */
+}
+.work h2 {
+  font-size: 2rem;
+  padding: 21px 0;
+}
+.work table {
+  margin: 20px 0px;
+  width: 100%;
+  /* Close of table heading */
+  /* Close of td */
+}
+.work table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+.work table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+/* Close of work section */
