@@ -127,6 +127,8 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+/* @ and mixins */
+/* styling for beginning of document */
 * {
   box-sizing: border-box;
 }
@@ -138,14 +140,15 @@ p {
   font-family: 'Red Hat Display', sans-serif;
   line-height: 1.4;
 }
+/* Styling for main */
 .container {
   width: 1200px;
   margin: 0 auto;
   border: 1px solid red;
+  background: #ab9add;
 }
 /*my navigation 8*/
 .nav-container {
-  background: grey;
   width: 90%;
   margin: 50px;
   display: flex;
@@ -182,7 +185,7 @@ p {
   height: 50px;
   margin: 25px 0px;
   border: 1px solid black;
-  background: teal;
+  background: #f0d3e0;
 }
 /*Close of my nav-container */
 /* Main content- Top half */
@@ -221,6 +224,7 @@ p {
 .work {
   width: 90%;
   margin: 50px;
+  padding: 0 77px;
   /* Close of h2 for work */
   /* Close of table in work history */
 }
@@ -243,3 +247,22 @@ p {
   padding: 8px;
 }
 /* Close of work section */
+footer {
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Close of h3 */
+  /* Close of p */
+}
+footer h3 {
+  font-size: 1.2rem;
+  padding: 20px;
+}
+footer p {
+  padding: 20px;
+  font: 'Red Hat Display', sans-serif;
+}
+/* Close of footer */
