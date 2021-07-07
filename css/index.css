@@ -1,1 +1,268 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+/* @ and mixins */
+/* styling for beginning of document */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+p {
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.4;
+}
+/* Styling for main */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+  background: #ab9add;
+}
+/*my navigation 8*/
+.nav-container {
+  width: 90%;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  /*close of my image tag */
+  /*close of my header tag */
+}
+.nav-container .img1 {
+  width: 40vh;
+}
+.nav-container header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px;
+  padding: 40px;
+  /*h1 close */
+  /*h2 close */
+  /*p close */
+}
+.nav-container header h1 {
+  font-size: 4rem;
+}
+.nav-container header h2 {
+  font-size: 2rem;
+  padding: 21px 0;
+}
+.nav-container header p {
+  font-size: 1rem;
+  margin: 20px 0 px;
+}
+.nav-container header button {
+  width: 116px;
+  height: 50px;
+  margin: 25px 0px;
+  border: 1px solid black;
+  background: #f0d3e0;
+}
+/*Close of my nav-container */
+/* Main content- Top half */
+.main {
+  width: 90%;
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  /*close of about section */
+  /* Close of Stuff section */
+}
+.main .About {
+  width: 40%;
+  padding: 20px;
+  /*close of h2 */
+}
+.main .About h2 {
+  font-size: 2rem;
+  padding: 21px 0;
+}
+.main .Stuff {
+  width: 40%;
+  padding: 20px;
+  /*close of h2 */
+  /*close of p */
+}
+.main .Stuff h2 {
+  font-size: 2rem;
+  padding: 21px 0;
+}
+.main .Stuff p {
+  border: 1px solid grey;
+  font-size: 1.4rem;
+}
+/*close of my main section */
+.work {
+  width: 90%;
+  margin: 50px;
+  padding: 0 77px;
+  /* Close of h2 for work */
+  /* Close of table in work history */
+}
+.work h2 {
+  font-size: 2rem;
+  padding: 21px 0;
+}
+.work table {
+  margin: 20px 0px;
+  width: 100%;
+  /* Close of table heading */
+  /* Close of td */
+}
+.work table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+.work table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+/* Close of work section */
+footer {
+  width: 100%;
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Close of h3 */
+  /* Close of p */
+}
+footer h3 {
+  font-size: 1.2rem;
+  padding: 20px;
+}
+footer p {
+  padding: 20px;
+  font: 'Red Hat Display', sans-serif;
+}
+/* Close of footer */

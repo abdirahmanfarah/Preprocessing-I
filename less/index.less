@@ -49,11 +49,148 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+/* @ and mixins */
+@font: 'Red Hat Display', sans-serif;
+@background:#ab9add;
+
+.h2element() {
+	font-size:2rem;
+padding:21px 0;
+}
+
+/* styling for beginning of document */
 * {
-    box-sizing: border-box;
+		box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+		height: 100%;
+}
+p{
+	font-family:@font;
+	line-height: 1.4;
 }
 
+/* Styling for main */
+.container {
+	width:1200px;
+	margin:0 auto;
+	border:1px solid red;
+	background:@background;
+}
+
+/*my navigation 8*/
+
+.nav-container{
+	// background:grey;
+	width:90%;
+	margin:50px;
+	display:flex;
+	justify-content: space-between;
+
+	.img1 {
+		width: 40vh;
+	} /*close of my image tag */
+
+	header {
+		display:flex;
+		flex-direction:column;
+		justify-content:flex-start;
+		margin:20px;
+		padding:40px;
+		h1 {
+			font-size:4rem;
+		}/*h1 close */
+		h2{
+			font-size:2rem;
+			padding:21px 0;
+		}/*h2 close */
+		p {
+			font-size:1rem;
+			margin:20px 0 px;
+		}/*p close */
+		button {
+			width:116px;
+			height:50px;
+			margin:25px 0px;
+			border:1px solid black;
+			background:#f0d3e0;
+		}
+	}/*close of my header tag */
+	
+}/*Close of my nav-container */
+
+/* Main content- Top half */
+
+.main {
+	width:90%;
+	margin:50px;
+	display:flex;
+	justify-content: space-around;
+	
+	.About {
+		width:40%;
+		padding:20px;
+		h2{
+			.h2element();
+		} /*close of h2 */
+	}/*close of about section */
+	
+	.Stuff {
+		width:40%;
+		padding:20px;
+		h2 {
+			.h2element();
+		} /*close of h2 */
+		p{
+			border:1px solid grey;
+			font-size:1.4rem;
+		}/*close of p */
+	}/* Close of Stuff section */
+	
+}/*close of my main section */
+
+.work {
+	width:90%;
+	margin:50px;
+	padding:0 77px;
+	// display:flex;
+	// flex-direction:column;
+
+	h2{
+		.h2element();
+	} /* Close of h2 for work */
+	table{
+		margin:20px 0px;
+		width:100%;
+		
+		th{
+			border:1px solid black;
+			padding:8px;
+		} /* Close of table heading */
+		
+		td{
+			border:1px solid black;
+			padding:8px;
+		} /* Close of td */
+	} /* Close of table in work history */
+
+}/* Close of work section */
+footer{
+	width:100%;
+	margin: 50px 0px;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	h3{
+		font-size:1.2rem;
+		padding:20px;
+	}/* Close of h3 */
+	p{
+		padding:20px;
+		font:@font;
+	} /* Close of p */
+} /* Close of footer */
